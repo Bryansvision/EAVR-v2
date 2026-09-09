@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
 
-    [SerializeField]
-    private PlayerManager playerManager;
+    //[SerializeField]
+    //private PlayerManager playerManager;
 
     [SerializeField]
     private MenuButton wallButton;
+
 
     private bool mouseIsUp = true;
     private bool menuActive = true;
@@ -24,10 +25,14 @@ public class MenuManager : MonoBehaviour
     private bool calledFromActivateWall = false;
 
     public GameObject XRDeviceSimulator;
+    public GameObject reticleCanvas;
+    public GameObject panelCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
+
+
         foreach (Transform child in transform.GetChild(0))
         {
             if (child.GetComponent<SubMenu>())
@@ -89,8 +94,15 @@ public class MenuManager : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(menuActive);
         Cursor.lockState = menuActive ? CursorLockMode.None : CursorLockMode.Locked;
         // Cursor.visible = true;
-        playerManager.SetCanvasActive (menuActive);
+        SetCanvasActive (menuActive);
     }
+
+    public void SetCanvasActive(bool c)
+    {
+        reticleCanvas.SetActive(!c);
+        //canvasActive = c;
+    }
+
 
     public void HasSelectedWalls (bool h)
     {

@@ -16215,6 +16215,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 858643998}
+    - target: {fileID: 460777028826840543, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1030344994017100982, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16231,6 +16235,10 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 858643998}
+    - target: {fileID: 2611952745126321626, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3533714288409281748, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
       propertyPath: doubleClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -16379,6 +16387,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 555223390}
+    - target: {fileID: 8837753504332620975, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895182557346316359, guid: dab240bf0bc9646439ffd56844b7c11b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
