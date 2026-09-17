@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
     private MenuButton wallButton;
 
 
-    private bool mouseIsUp = true;
+    public bool mouseIsUp = true;
     private bool menuActive = true;
 
     [Space]
